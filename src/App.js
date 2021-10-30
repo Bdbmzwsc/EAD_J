@@ -28,7 +28,7 @@ class App extends React.Component {
             alert(kai);
         }
         catch (error) {
-            alert("Please enter Base64 encrypted string");
+            alert("Please enter Base64 encrypted string.");
         }
         
     }
