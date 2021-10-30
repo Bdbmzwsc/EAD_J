@@ -1,14 +1,11 @@
 import logo from './logo.svg';
 import React from "react";
 import './App.css';
-import Base64 from 'crypto-js/enc-base64'
-import Utf8 from 'crypto-js/enc-utf8'
+//import Base64 from 'crypto-js/enc-base64'
+//import Utf8 from 'crypto-js/enc-utf8'
 import { decode as base64_decode, encode as base64_encode } from 'base-64';
 
 class App extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     input = (e) => {
         
    //    let Key2 = Base64.stringify(Utf8.parse(this.refs.textbox.value));.
@@ -51,24 +48,5 @@ class App extends React.Component {
         );
     }
 }
-class inputclick extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    input = (e) => {
-        if (e.keyCode === 13) {
-            console.log(this.refs.textbox.value)
-        }
-    }
-    render() {
-        return (
-            <div>
-                <input type="text" ref="textbox" onKeyUp={this.input} />
-            </div>
-
-        );
-    }
-}
-
 
 export default App;
